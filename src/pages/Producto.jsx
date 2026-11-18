@@ -1,9 +1,10 @@
 import { useParams, Link } from "react-router-dom";
 import WhatsAppButton from "../components/ui/WhatsAppButton";
+import { getProductoPorSlug } from "../services/productos";
 
-export default function Producto({ productos, config }) {
+export default function Producto({ config, rubro = "viajes" }) {
   const { slug } = useParams();
-  const producto = productos.find((p) => p.slug === slug);
+  const producto = getProductoPorSlug(slug, rubro);
 
   if (!producto) {
     return (
@@ -11,7 +12,7 @@ export default function Producto({ productos, config }) {
         <h1 className="text-2xl font-semibold text-gray-900">
           Producto no encontrado
         </h1>
-        <Link to="/viajes" className="mt-4 text-green-700 hover:underline">
+        <Link to={`/${rubro}`}className="mt-4 text-green-700 hover:underline">
           ← Volver al catálogo
         </Link>
       </div>
@@ -30,7 +31,7 @@ export default function Producto({ productos, config }) {
     <div className="pt-10 pb-16 px-6 max-w-5xl mx-auto">
       {/* Volver */}
       <Link
-        to="/viajes"
+        to={`/${rubro}`}
         className="inline-flex items-center text-sm text-gray-600 hover:text-green-700 mb-6"
       >
         ← Volver al catálogo

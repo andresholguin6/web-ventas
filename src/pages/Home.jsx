@@ -6,12 +6,14 @@ import Servicios from "../components/sections/Servicios";
 import Productos from "../components/sections/Productos";
 import Testimonios from "../components/sections/Testimonios";
 import Footer from "../components/layout/Footer";
+import { getProductos } from "../services/productos";
 
 export default function Home({
   config,
-  productos,
+  rubro = "viajes",
   tituloProductos = "Productos",
 }) {
+  const productos = getProductos(rubro);
   return (
     <div className="min-h-screen bg-green-50">
       <NavBar config={config} />
