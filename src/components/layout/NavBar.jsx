@@ -1,17 +1,8 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { siteConfig } from "../../data/siteConfig";
 
-const links = [
-  { href: "#inicio", label: "Inicio" },
-  { href: "#sobre-mi", label: "Sobre mí" },
-  { href: "#servicios", label: "Servicios" },
-  { href: "#productos", label: "Productos" },
-  { href: "#testimonios", label: "Testimonios" },
-  { href: "#contacto", label: "Contacto" },
-];
 
-export default function Navbar() {
+export default function Navbar({ config }) {
   const [abierto, setAbierto] = useState(false);
 
   useEffect(() => {
@@ -24,14 +15,16 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", cerrarAlScroll);
   }, [abierto]);
 
+  const links = config.nav.links;
+
   return (
     <header className="fixed top-0 w-full bg-green/50 backdrop-blur z-50 shadow-sm">
       <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-2">
         {/* Logo */}
         <a href="#inicio" className="flex items-center gap-2">
           <img
-            src="/images/drenalinfa-logo.png"
-            alt={`Logo ${siteConfig.nombre}`}
+            src={config.negocio.logo}
+            alt={`Logo ${config.negocio.nombre}`}
             className="h-16 w-16 md:h-20 md:w-20 object-contain"
           />
         </a>

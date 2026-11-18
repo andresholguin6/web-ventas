@@ -17,7 +17,7 @@
   },
   "hero": {
     "tipo": "video",
-    "ruta": "/media/hero-viajes.mp4",
+    "ruta": "/images/Hero-viajes.mp4",
     "poster": "/media/hero-viajes-poster.jpg",
     "titulo": "Descubre el mundo con nosotros",
     "subtitulo": "Paquetes todo incluido a los destinos más increíbles de Colombia y el mundo",
@@ -66,7 +66,7 @@
   "nav": {
     "links": [
       { "href": "#inicio", "label": "Inicio" },
-      { "href": "#sobre", "label": "Sobre nosotros" },
+      { "href": "#sobre-mi", "label": "Sobre nosotros" },
       { "href": "#productos", "label": "Paquetes" },
       { "href": "#testimonios", "label": "Testimonios" },
       { "href": "#contacto", "label": "Contacto" }

@@ -1,13 +1,12 @@
-import { productos } from "../../data/productos";
 import ProductCard from "../ui/ProductCard";
 
-export default function Productos() {
+export default function Productos({ productos, titulo = "Productos" }) {
   return (
     <section id="productos" className="py-10 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-start mb-10">
           <h2 className="font-titles text-3xl md:text-4xl font-normal text-gray-900 relative inline-block">
-            Productos
+            {titulo}
             <svg
               className="absolute -bottom-3 left-0 w-full h-3 text-green-500"
               viewBox="0 0 200 12"
