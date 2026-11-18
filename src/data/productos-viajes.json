@@ -1,0 +1,65 @@
+[
+  {
+    "id": "viaje-1",
+    "slug": "san-andres-4-dias",
+    "nombre": "San Andrés 4 días / 3 noches",
+    "categoria": "Playas",
+    "descripcionCorta": "Paquete todo incluido para disfrutar del mar de los 7 colores.",
+    "descripcionLarga": "Incluye tiquetes aéreos, hotel, desayunos y tour a Johnny Cay. Salida desde Bogotá. Una experiencia inolvidable en el Caribe colombiano.",
+    "imagen": "/media/productos/san-andres.jpg",
+    "galeria": [],
+    "precio": 1250000,
+    "moneda": "COP",
+    "mostrarPrecio": true,
+    "atributos": {
+      "destino": "San Andrés",
+      "duracion": "4 días / 3 noches",
+      "fechaSalida": "Diciembre 2026",
+      "incluye": ["Tiquetes ida y vuelta", "Hotel 3 noches", "Desayunos", "Tour Johnny Cay"],
+      "noIncluye": ["Gastos personales", "Propinas"]
+    },
+    "activo": true
+  },
+  {
+    "id": "viaje-2",
+    "slug": "cartagena-3-dias",
+    "nombre": "Cartagena 3 días / 2 noches",
+    "categoria": "Playas",
+    "descripcionCorta": "Historia, cultura y playas en la ciudad amurallada.",
+    "descripcionLarga": "Paquete con hotel boutique en el centro histórico, city tour y día de playa en las Islas del Rosario. Ideal para parejas y familias.",
+    "imagen": "/media/productos/cartagena.jpg",
+    "galeria": [],
+    "precio": 980000,
+    "moneda": "COP",
+    "mostrarPrecio": true,
+    "atributos": {
+      "destino": "Cartagena",
+      "duracion": "3 días / 2 noches",
+      "fechaSalida": "Noviembre 2026",
+      "incluye": ["Hotel boutique", "Desayunos", "City tour", "Día de playa Islas del Rosario"],
+      "noIncluye": ["Tiquetes aéreos", "Almuerzos", "Gastos personales"]
+    },
+    "activo": true
+  },
+  {
+    "id": "viaje-3",
+    "slug": "eje-cafetero-5-dias",
+    "nombre": "Eje Cafetero 5 días / 4 noches",
+    "categoria": "Montaña",
+    "descripcionCorta": "Paisajes, café y aventura en el corazón de Colombia.",
+    "descripcionLarga": "Recorre Salento, Valle de Cocora, termales y fincas cafeteras. Incluye transporte, alojamiento y actividades guiadas.",
+    "imagen": "/media/productos/eje-cafetero.jpg",
+    "galeria": [],
+    "precio": 1450000,
+    "moneda": "COP",
+    "mostrarPrecio": true,
+    "atributos": {
+      "destino": "Eje Cafetero",
+      "duracion": "5 días / 4 noches",
+      "fechaSalida": "Enero 2027",
+      "incluye": ["Transporte", "Alojamiento 4 noches", "Desayunos", "Tour finca cafetera", "Valle de Cocora"],
+      "noIncluye": ["Almuerzos y cenas", "Gastos personales", "Actividades opcionales"]
+    },
+    "activo": true
+  }
+]

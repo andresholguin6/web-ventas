@@ -1,0 +1,70 @@
+{
+  "rubro": "bisuteria",
+  "negocio": {
+    "nombre": "Ana Bisutería",
+    "logo": "/media/logo-viajes.png",
+    "eslogan": "Piezas únicas hechas a mano",
+    "whatsapp": "573001234567",
+    "ciudad": "Medellín",
+    "email": "hola@anabisuteria.com",
+    "direccion": "Carrera 45 #12-34, Medellín"
+  },
+  "tema": {
+    "primario": "#a855f7",
+    "secundario": "#f43f5e",
+    "fondo": "#fdf4ff",
+    "texto": "#1e293b"
+  },
+  "hero": {
+    "tipo": "imagen",
+    "ruta": "/media/hero-bisuteria.jpg",
+    "titulo": "Piezas únicas para personas únicas",
+    "subtitulo": "Bisutería artesanal hecha a mano con amor en Medellín",
+    "ctaTexto": "Ver colección",
+    "ctaLink": "#productos"
+  },
+  "sobre": {
+    "titulo": "Sobre nosotros",
+    "texto": "Somos un emprendimiento familiar que crea piezas únicas de bisutería artesanal. Cada collar, pulsera y arete está hecho a mano con materiales de la más alta calidad.",
+    "datos": [
+      { "label": "Piezas creadas", "valor": "2000+" },
+      { "label": "Clientas felices", "valor": "800+" },
+      { "label": "Años creando", "valor": "5+" }
+    ]
+  },
+  "testimonios": [
+    {
+      "nombre": "Laura Pérez",
+      "texto": "La calidad es increíble. Mi collar es mi pieza favorita.",
+      "foto": "/media/testimonios/laura.jpg"
+    },
+    {
+      "nombre": "Sofía Ramírez",
+      "texto": "Compré un regalo y quedó perfecto. Atención muy personalizada.",
+      "foto": "/media/testimonios/sofia.jpg"
+    }
+  ],
+  "footer": {
+    "imagenFondo": "/media/footer-viajes.jpg",
+    "titulo": "¿Empezamos?",
+    "subtitulo": "Escríbenos y con gusto te ayudamos a planear tu próximo viaje.",
+    "whatsappMensaje": "Hola, vengo desde su página web y quisiera más información sobre los paquetes.",
+    "ubicacion": "Bogotá, Colombia",
+    "redes": [
+      { "nombre": "Instagram", "url": "https://instagram.com/viajesmundo", "icono": "instagram" },
+      { "nombre": "Facebook", "url": "https://facebook.com/viajesmundo", "icono": "facebook" },
+      { "nombre": "TikTok", "url": "https://tiktok.com/@viajesmundo", "icono": "tiktok" }
+    ],
+    "copyright": "© 2026 Viajes Mundo. Todos los derechos reservados."
+  },
+  "nav": {
+    "links": [
+      { "href": "#inicio", "label": "Inicio" },
+      { "href": "#sobre", "label": "Sobre nosotros" },
+      { "href": "#productos", "label": "Productos" },
+      { "href": "#testimonios", "label": "Testimonios" },
+      { "href": "#contacto", "label": "Contacto" }
+    ]
+  },
+  "camposProducto": ["material", "talla", "color", "stock"]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "bisu-1",
+    "slug": "collar-plata-luna",
+    "nombre": "Collar de plata con dije de luna",
+    "categoria": "Collares",
+    "descripcionCorta": "Collar artesanal en plata 925 con dije de luna.",
+    "descripcionLarga": "Hecho a mano, incluye cadena de 45 cm y estuche de regalo. Perfecto para el día a día o para regalar.",
+    "imagen": "/media/productos/collar-luna.jpg",
+    "galeria": [],
+    "precio": 85000,
+    "moneda": "COP",
+    "mostrarPrecio": true,
+    "atributos": {
+      "material": "Plata 925",
+      "talla": "45 cm",
+      "color": "Plateado",
+      "stock": 10
+    },
+    "activo": true
+  },
+  {
+    "id": "bisu-2",
+    "slug": "aretes-perlas",
+    "nombre": "Aretes de perlas naturales",
+    "categoria": "Aretes",
+    "descripcionCorta": "Aretes elegantes con perlas naturales.",
+    "descripcionLarga": "Perlas cultivadas de 8mm con base de plata. Ideales para ocasiones especiales.",
+    "imagen": "/media/productos/aretes-perlas.jpg",
+    "galeria": [],
+    "precio": 65000,
+    "moneda": "COP",
+    "mostrarPrecio": true,
+    "atributos": {
+      "material": "Perla cultivada + plata",
+      "talla": "Única",
+      "color": "Blanco",
+      "stock": 5
+    },
+    "activo": true
+  },
+  {
+    "id": "bisu-3",
+    "slug": "pulsera-cuarzo-rosa",
+    "nombre": "Pulsera de cuarzo rosa",
+    "categoria": "Pulseras",
+    "descripcionCorta": "Pulsera con piedras naturales de cuarzo rosa.",
+    "descripcionLarga": "Piedras de cuarzo rosa de 8mm engarzadas en hilo elasticado. Ajustable a cualquier muñeca.",
+    "imagen": "/media/productos/pulsera-cuarzo.jpg",
+    "galeria": [],
+    "precio": 45000,
+    "moneda": "COP",
+    "mostrarPrecio": true,
+    "atributos": {
+      "material": "Cuarzo rosa natural",
+      "talla": "Ajustable",
+      "color": "Rosa",
+      "stock": 15
+    },
+    "activo": true
+  }
+]

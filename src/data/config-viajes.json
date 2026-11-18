@@ -1,0 +1,76 @@
+{
+  "rubro": "viajes",
+  "negocio": {
+    "nombre": "Viajes Mundo",
+    "logo": "/media/logo-viajes.png",
+    "eslogan": "Tu próxima aventura empieza aquí",
+    "whatsapp": "573001234567",
+    "ciudad": "Bogotá",
+    "email": "info@viajesmundo.com",
+    "direccion": "Calle 123 #45-67, Bogotá"
+  },
+  "tema": {
+    "primario": "#0ea5e9",
+    "secundario": "#f59e0b",
+    "fondo": "#f8fafc",
+    "texto": "#1e293b"
+  },
+  "hero": {
+    "tipo": "video",
+    "ruta": "/media/hero-viajes.mp4",
+    "poster": "/media/hero-viajes-poster.jpg",
+    "titulo": "Descubre el mundo con nosotros",
+    "subtitulo": "Paquetes todo incluido a los destinos más increíbles de Colombia y el mundo",
+    "ctaTexto": "Ver paquetes",
+    "ctaLink": "#productos"
+  },
+  "sobre": {
+    "titulo": "Sobre nosotros",
+    "texto": "Somos una agencia de viajes con más de 10 años de experiencia creando experiencias inolvidables. Nos especializamos en paquetes personalizados para que solo te preocupes por disfrutar.",
+    "datos": [
+      { "label": "Años de experiencia", "valor": "10+" },
+      { "label": "Clientes felices", "valor": "5000+" },
+      { "label": "Destinos", "valor": "50+" }
+    ]
+  },
+  "testimonios": [
+    {
+      "nombre": "María González",
+      "texto": "El mejor viaje de mi vida. Todo organizado, sin preocupaciones. 100% recomendados.",
+      "foto": "/media/testimonios/maria.jpg"
+    },
+    {
+      "nombre": "Carlos Rodríguez",
+      "texto": "Nos ayudaron a planear nuestro viaje soñado. Atención impecable y precios justos.",
+      "foto": "/media/testimonios/carlos.jpg"
+    },
+    {
+      "nombre": "Ana Martínez",
+      "texto": "Viajamos en familia y todo salió perfecto. Los niños disfrutaron al máximo.",
+      "foto": "/media/testimonios/ana.jpg"
+    }
+  ],
+  "footer": {
+    "imagenFondo": "/media/footer-viajes.jpg",
+    "titulo": "¿Empezamos?",
+    "subtitulo": "Escríbenos y con gusto te ayudamos a planear tu próximo viaje.",
+    "whatsappMensaje": "Hola, vengo desde su página web y quisiera más información sobre los paquetes.",
+    "ubicacion": "Bogotá, Colombia",
+    "redes": [
+      { "nombre": "Instagram", "url": "https://instagram.com/viajesmundo", "icono": "instagram" },
+      { "nombre": "Facebook", "url": "https://facebook.com/viajesmundo", "icono": "facebook" },
+      { "nombre": "TikTok", "url": "https://tiktok.com/@viajesmundo", "icono": "tiktok" }
+    ],
+    "copyright": "© 2026 Viajes Mundo. Todos los derechos reservados."
+  },
+  "nav": {
+    "links": [
+      { "href": "#inicio", "label": "Inicio" },
+      { "href": "#sobre", "label": "Sobre nosotros" },
+      { "href": "#productos", "label": "Paquetes" },
+      { "href": "#testimonios", "label": "Testimonios" },
+      { "href": "#contacto", "label": "Contacto" }
+    ]
+  },
+  "camposProducto": ["destino", "duracion", "fechaSalida", "incluye", "noIncluye"]
+}
