@@ -2,18 +2,17 @@ import NavBar from "../components/layout/NavBar";
 import Hero from "../components/sections/Hero";
 import Estadisticas from "../components/sections/Estadisticas";
 import SobreMi from "../components/sections/SobreMi";
-import Servicios from "../components/sections/Servicios";
 import Productos from "../components/sections/Productos";
 import Testimonios from "../components/sections/Testimonios";
 import Footer from "../components/layout/Footer";
-import { getProductos } from "../services/productos";
+import { useProductos } from "../hooks/useProducts";
 
 export default function Home({
   config,
   rubro = "viajes",
   tituloProductos = "Productos",
 }) {
-  const productos = getProductos(rubro);
+ const { productos } = useProductos(rubro);
   return (
     <div className="min-h-screen bg-green-50">
       <NavBar config={config} />

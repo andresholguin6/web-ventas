@@ -88,7 +88,7 @@ export function actualizarProducto(id, data, rubro = "viajes") {
     ...productos[idx],
     ...data,
     id: productos[idx].id, // no permitir cambiar el id
-    slug: data.slug || productos[idx].slug,
+    slug: productos[idx].slug,
   };
 
   localStorage.setItem(STORAGE_KEYS[rubro], JSON.stringify(productos));

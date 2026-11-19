@@ -1,16 +1,76 @@
-# React + Vite
+# Catálogo Digital Multi-Rubro
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Prototipo de catálogo dinámico con panel administrativo, diseñado para pymes que venden por WhatsApp (agencias de viajes, bisutería, etc.). Un solo motor, múltiples "pieles" por rubro.
 
-Currently, two official plugins are available:
+## 🚀 Cómo correr el proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+Abre http://localhost:5173.
 
-## React Compiler
+🔑 Acceso al panel admin
+Ruta: /admin
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Usuario: admin
 
-## Expanding the Oxlint configuration
+Contraseña: admin123
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+⚠️ Credenciales de prototipo. En producción se reemplazan por autenticación real.
+
+🗺️ Rutas
+Ruta	Descripción
+/viajes	Catálogo de viajes
+/bisuteria	Catálogo de bisutería (pendiente de conectar)
+/producto/:slug	Ficha individual de producto
+/admin	Panel administrativo
+
+📁 Estructura
+text
+src/
+├── components/
+│   ├── layout/       → NavBar, Footer
+│   ├── sections/     → Hero, Productos, SobreMi, Testimonios, etc.
+│   ├── ui/           → ProductCard, WhatsAppButton
+│   └── admin/        → LoginForm, AdminHeader, ProductosTable, ProductoForm
+├── data/             → JSONs de config y productos (seeds)
+├── hooks/            → useAuth, useProductos
+├── pages/            → Home, Producto, Admin
+├── servicios/        → productos.js (capa de acceso a datos)
+└── styles/
+
+🔄 Arquitectura de datos
+Prototipo: localStorage + seeds JSON.
+
+Producción: el servicio servicios/productos.js cambiará su cuerpo por fetch() a la API. Los componentes no se tocan.
+
+✅ Funcionalidades actuales
+Catálogo con filtros por categoría (pendiente de pulir).
+
+Ficha individual con botón de WhatsApp (mensaje precargado).
+
+Panel admin con login, CRUD de productos y compresión de imágenes.
+
+Persistencia en localStorage.
+
+⚠️ Pendientes para producción
+Backend real (Node/Express o Cloudflare).
+
+Autenticación real (JWT o Cloudflare Access).
+
+Validación de archivos en el servidor.
+
+Almacenamiento de imágenes en Cloudflare R2.
+
+Admin en subdominio separado.
+
+SEO básico y analytics.
+
+npm audit y versiones fijas.
+
+📝 Notas
+La compresión de imágenes se hace en el cliente con browser-image-compression.
+
+El slug se genera del nombre al crear y no se modifica al editar (para no romper URLs).
+
+Los campos de producto son opcionales excepto nombre e imagen.
